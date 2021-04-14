@@ -1,10 +1,10 @@
 <section>
   <div>
-    <input type="text" placeholder="telephone number"/>
+    <input [(ngModel)]="phone" type="text" placeholder="telephone number"/>
     <button (click)="login()">Sign in</button>
   </div>
   <div *ngIf="phoneEntered">
-    <input type="text" placeholder="code"/>
+    <input  [(ngModel)]="code" type="text" placeholder="code"/>
     <button (click)="login()">Sign in</button>
   </div>
 </section>
